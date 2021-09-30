@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contablito</title>
+
+</head>
+<body>
+ <script>
+    if(!sessionStorage.getItem("accion")){
+        location.href="presentation.html"; 
+    } ;
+ </script>
+    <h1>Contablito</h1>
+       <p>Descripción <input type="text" id="description"></p>
+       <p>Tipo Transacción 
+            <input type="radio" name="tipoTransaccion" id="ttcompra">Compra
+            <input type="radio" name="tipoTransaccion" id="ttventa">Venta           
+        </p>    
+        <p> Tipo IVA
+            <input type="radio" name="tipoIva" id="tibasico">Básico
+            <input type="radio" name="tipoIva" id="timinimo">Mínimo
+            <input type="radio" name="tipoIva" id="tiexcento">Excento
+        </p>
+        <p>Subtotal ($)
+            <input type="number" id="subtotal">
+            <input type="button" value="Ingresar" id="btnIngresar" />
+        </p>   
+        <table>
+            <tr>
+              <th>Descripción</th>
+              <th>Tipo</th>
+              <th>Subtotal ($)</th>
+              <th>IVA ($)</th>
+              <th>Total ($)</th> 
+            </tr>
+            <tbody id="info"></tbody>
+          </table>
+    <p>Total Ventas: $ <p id="costoventas"></p> Total Compras: $ <p id="costocompra"></p></p>
+</body>
+
+
+</html>
