@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
-    
+    <br><br><br><br><br><br>
+  <div class="container p-5 alert alert-success" style="width:25%;">
     <h1><strong>Contablito</strong></h1>
     <br>
     <div>
-    <button type="button" class="btn btn-danger" onclick="RegistroProducto();">Registrar un Producto</button>
+    <button type="button" class="btn btn-danger" onclick="AlertasStockProductos();">Alertas de Stock</button>
     <br>
-    <button type="button" class="btn btn-danger" onclick="RegistroMovimiento();">Registrar un Movimiento</button>
+    <button type="button" class="btn btn-danger" onclick="RegProducto();">Registrar un Producto</button>
+    <br>
+    <button type="button" class="btn btn-danger" onclick="RegMovimiento();">Registrar un Movimiento</button>
     <br>
     <button type="button" class="btn btn-danger" onclick="ConsultarStockProductos();">Consultar Stock de Productos</button>
+
     </div>
+  </div>
     <script src="js/presentation.js"></script>
 </body>
 </html>

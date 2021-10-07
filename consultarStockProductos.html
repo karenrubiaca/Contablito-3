@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>ConsultaStock</title>
+
+    <style>
+      tr, th {
+        padding: 10px;
+        border: 1px solid;
+      }
+      </style>
 </head>
 <body>
-    
+     <h1>Stock de Productos</h1>
+    <div>
+     <table id="myTable"  >
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Imagen</th>
+          <th>Stock</th>
+          <th>Costo Unitario</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="js/consultarStockProductos.js"></script>
 </body>
 </html>

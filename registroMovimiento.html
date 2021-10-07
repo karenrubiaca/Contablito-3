@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>RegistroMovimiento</title>
+    <h1>Registro de Movimiento</h1>
+    <table id="tableMov">
+        <tr>
+          <th>Tipo Transacción: </th>
+          <td><input type="radio" name="tipoTransaccion" id="ttcompra">Compra</td>
+          <td><input type="radio" name="tipoTransaccion" id="ttventa">Venta</td>        
+        </tr>
+
+        <tr>
+            <th>Fecha</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>Producto</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>Cantidad</th>
+            <td><input type="number" id="subtotal"></td>
+        </tr>
+
+        <tr>
+            <th>Subtotal ($)</th>
+            <td><input type="number" id="subtotal"></td>
+          </tr>
+
+        <tr>        
+            <th>Tipo IVA</th>
+            <td><input type="radio" name="tipoIva" id="tibasico">Básico</td>
+            <td><input type="radio" name="tipoIva" id="timinimo">Mínimo</td>
+            <td><input type="radio" name="tipoIva" id="tiexcento">Excento</td>
+          </tr>
+
+          <tr>
+            <th>Total</th>
+        </tr>  
+      </table>
+      <td><input onclick="RegistroMovimiento(ttcompra.value,ttventa.value,Fecha,Producto,subtotal.value,subtotal.value)" type="button" class="btn btn-danger" value="Ingresar" id="registroMovimiento" /></td>
 </head>
 <body>
-    
+  <script src="js/registroMovimiento.js"></script>
+  <script src="js/init.js"></script>
 </body>
 </html>
+
+
